@@ -41,9 +41,7 @@ width: 500px;
   }
 }
 
-.HeroSection__banner {
-  display: flex;
-}
+
 
 
 </style>

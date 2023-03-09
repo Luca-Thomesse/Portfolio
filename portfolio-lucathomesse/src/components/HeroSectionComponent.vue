@@ -31,9 +31,51 @@ export default {
         'photo',
         'communication',
         'vidéo',
-        'découvrir'
+        'découvrir',
+        'photo',
+        'communication',
+        'vidéo',
       ]
     }
   }
 }
 </script>
+
+<style lang="scss" scoped>
+@import "src/scss/foundations/variable.scss";
+
+.HeroSection__banner {
+  padding: 20px 15px;
+  width: 1440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+  color: $portfolioInitialColor_font;
+  font-weight: $-fw-m;
+  margin-left: -100px;
+  margin-top: $-sp-l;
+}
+
+.HeroSection__image {
+  width: 300px;
+  margin-top: $-sp-s;
+}
+
+.HeroSection__content {
+  display: flex;
+  align-items: center;
+}
+
+.HeroSection__title {
+  margin-top: $-sp-m;
+  font-size: $-t-l;
+  line-height: $-t-l;
+}
+
+.HeroSection__text {
+  margin-top: $-sp-xs;
+  font-size: $-t-s;
+  line-height: $-t-m;
+}
+</style>
