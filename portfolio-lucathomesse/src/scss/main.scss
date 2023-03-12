@@ -10,6 +10,7 @@ body {
 background-color: $portfolioBackground;
   color: white;
   font-family: $portfolioMainText_font;
+  overflow-x: hidden;
 
 }
 
@@ -18,8 +19,21 @@ a {
   color: white;
 }
 
-h1 {
+h1,h2 {
   font-family: $portfolioMainTitle_font;
+}
+
+h2 {
+  font-size: $-t-l;
+  max-width: fit-content;
+  margin-bottom: $-sp-s;
+  margin-top: $-sp-l;
+}
+
+h3 {
+  font-family: $portfolioMainTitle_font;
+  font-size: $-t-m;
+  margin-bottom: $-sp-s;
 }
 
 li {
@@ -35,4 +49,10 @@ li {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.text {
+  font-family: $portfolioMainText_font;
+  font-size: $-t-s;
+  line-height: calc($-t-s*2);
 }

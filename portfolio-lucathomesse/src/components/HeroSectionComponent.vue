@@ -5,7 +5,7 @@
     <h1 class="HeroSection__title">
       <span class="portfolioTextGradient">Je suis Luca,</span>
       <br>
-      et bienvenue sur mon portefolio
+      et bienvenue sur mon portfolio
     </h1>
       <p class="HeroSection__text">Découvrez mes projets dans diverses domaines tel que la photographie, la vidéo et la communication.</p>
     </div>
@@ -14,7 +14,7 @@
     </div>
     </div>
     <div class="HeroSection__banner">
-      <p v-for="item in items" :key="item">
+      <p class="portfolioTextGradient" v-for="item in items" :key="item">
         {{item}}
       </p>
     </div>
@@ -45,16 +45,32 @@ export default {
 @import "src/scss/foundations/variable.scss";
 
 .HeroSection__banner {
-  padding: 20px 15px;
-  width: 1440px;
+  padding: 20px 0;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: white;
-  color: $portfolioInitialColor_font;
-  font-weight: $-fw-m;
+  font-weight: $-fw-l;
+  font-size: $-t-m;
   margin-left: -100px;
   margin-top: $-sp-l;
+  font-family: $portfolioLogo_font;
+  text-transform: uppercase;
+  position: relative;
+  background-clip: padding-box;
+  background-color: white;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -10px;
+    border-radius: inherit;
+    background: $portfolioGradientColor_font;
+  }
 }
 
 .HeroSection__image {
