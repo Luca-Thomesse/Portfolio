@@ -3,17 +3,17 @@
     <div class="HeroSection__content">
     <div class="HeroSection__description-text">
     <h1 class="HeroSection__title">
-      <span class="portfolioTextGradient">Je suis Luca,</span>
+      <span class="portfolioTextGradient">{{gradientTitle}}</span>
       <br>
-      et bienvenue sur mon portfolio
+      {{whiteTitle}}
     </h1>
-      <p class="HeroSection__text">Découvrez mes projets dans diverses domaines tel que la photographie, la vidéo et la communication.</p>
+      <p class="HeroSection__text">{{description}}</p>
     </div>
     <div class="HeroSection__description-image">
-      <img class="HeroSection__image" src="public/images/moi.png">
+      <img class="HeroSection__image" :src="image">
     </div>
     </div>
-    <div class="HeroSection__banner">
+    <div class="HeroSection__banner" v-if="isBannerActive">
       <p class="portfolioTextGradient" v-for="item in items" :key="item">
         {{item}}
       </p>
@@ -26,7 +26,7 @@ export default {
   name: 'HeroSectionComponent',
   props: {
     items: {
-      type: Array,
+      type: Object,
       default: () => [
         'photo',
         'communication',
@@ -36,6 +36,26 @@ export default {
         'communication',
         'vidéo',
       ]
+    },
+    gradientTitle: {
+      type: String,
+      default: 'Gradient title'
+    },
+    whiteTitle: {
+      type: String,
+      default: 'White title'
+    },
+    description: {
+      type: String,
+      default: 'Description'
+    },
+    image: {
+      type: String,
+      default: null
+    },
+    isBannerActive: {
+      type: Boolean,
+      default: true
     }
   }
 }

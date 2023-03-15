@@ -3,7 +3,7 @@
     <RouterLink class="navigation__logo portfolioLogo" to="/">Lutho</RouterLink>
     <nav class="navigation__nav" @click="burgerMenu">
       <RouterLink class="navigation__nav-item" to="/photo">Photo</RouterLink>
-      <RouterLink class="navigation__nav-item" to="/video">Video</RouterLink>
+      <RouterLink class="navigation__nav-item" to="/video">Vidéo</RouterLink>
       <RouterLink class="navigation__nav-item" to="/communication">Communication</RouterLink>
       <RouterLink class="navigation__nav-item" to="/contact">Contact</RouterLink>
     </nav>

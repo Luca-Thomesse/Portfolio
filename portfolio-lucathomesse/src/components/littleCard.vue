@@ -44,8 +44,10 @@ export default {
   align-items: center;
   margin-bottom: $-sp-s;
   &__icon {
-    width: 126px;
-    height: auto;
+    img {
+      width: auto;
+      height: 126px;
+    }
     margin-bottom: $-sp-xs;
   }
   &__title {

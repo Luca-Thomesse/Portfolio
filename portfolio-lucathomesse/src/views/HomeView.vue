@@ -1,24 +1,83 @@
-<script setup>
+<script>
 import HeroSectionComponent from "@/components/HeroSectionComponent.vue";
 import PortfolioParagraphe from "@/components/PortfolioParagraphe.vue";
-import Bouton from "@/components/bouton.vue";
 import BigCard from "@/components/bigCard.vue";
-import LittleCard from "@/components/littleCard.vue";</script>
+import LittleCard from "@/components/littleCard.vue";
+import axios from "axios";
+import bigCard from "@/components/bigCard.vue";
+import littleCard from "@/components/littleCard.vue";
+
+export default {
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "homepage",
+  computed: {
+    littleCard() {
+      return littleCard
+    },
+    bigCard() {
+      return bigCard
+    }
+  },
+  components: {
+    HeroSectionComponent,
+    PortfolioParagraphe,
+    BigCard,
+    LittleCard,
+  },
+  data() {
+    return {
+      entete: [],
+      bigcards: [],
+      littlecards: [],
+    }
+  },
+  async created() {
+    await axios.get('https://portefolio-db.lucathomesse.fr/wp-json/wp/v2/entete/28848').then((response) => {
+      this.entete = response.data.acf;
+      console.log(this.entete);
+    })
+    await axios.get('https://portefolio-db.lucathomesse.fr/wp-json/wp/v2/bigcard').then((response) => {
+      this.bigcards = response.data;
+      console.log(this.bigcards);
+    })
+    await axios.get('https://portefolio-db.lucathomesse.fr/wp-json/wp/v2/littlecard').then((response) => {
+      this.littlecards = response.data;
+      console.log(this.littlecards);
+    })
+  }
+}
+</script>
 
 <template>
   <div class="HomeView">
-    <HeroSectionComponent/>
+    <HeroSectionComponent v-if="entete !== []"
+                          :gradient-title="entete.title.gradient"
+                          :white-title="entete.title.white"
+                          :image="entete.image.url"
+                          :description="entete.description"
+                          :items="entete.banner"
+                          :is-banner-active="true"
+    />
     <PortfolioParagraphe/>
+
     <h2 class="portfolioTextGradient">Mes travaux</h2>
-    <big-card v-for="item in 3"/>
+    <template v-for="bigCard in bigcards" :key="bigCard.id">
+      <big-card
+          :image-link="bigCard.acf.image"
+          :title="bigCard.acf.title"
+          :link="bigCard.acf.link"
+      />
+    </template>
+
     <h2 class="portfolioTextGradient">Logiciels</h2>
     <div class="container__littleCard">
-      <little-card v-for="item in 5"/>
+      <template v-for="littlecard in littlecards" :key="littlecard.id">
+        <little-card class="littleCard"
+                     :icon-link="littlecard.acf.image"
+                     :title="littlecard.acf.title"
+        />
+      </template>
     </div>
-
-
-
-
   </div>
 </template>
 
@@ -28,6 +87,13 @@ import LittleCard from "@/components/littleCard.vue";</script>
   flex-flow: row wrap;
   justify-content: space-between;
 
+}
+
+.littleCard {
+  &__icon-link {
+    width: 126px;
+    height: auto;
+  }
 }
 </style>
 

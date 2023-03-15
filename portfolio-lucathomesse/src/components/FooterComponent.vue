@@ -3,9 +3,9 @@
     <navigation/>
     <div class="footer__content">
       <div class="footer__socialMedias">
-        <a href=""><img src="/icons/Instagram.png" alt="Instagram" class="footer__icon"></a>
-        <a href=""><img src="/icons/LinkedIn.png" alt="LinkedIn" class="footer__icon"></a>
-        <a href=""><img src="/icons/YouTube.png" alt="YouTube" class="footer__icon"></a>
+        <a href="https://www.instagram.com/luthopho/"><img src="/icons/Instagram.png" alt="Instagram" class="footer__icon"></a>
+        <a href="https://www.linkedin.com/in/luca-thomesse"><img src="/icons/LinkedIn.png" alt="LinkedIn" class="footer__icon"></a>
+        <a href="https://www.youtube.com/@luth0/"><img src="/icons/YouTube.png" alt="YouTube" class="footer__icon"></a>
       </div>
       <div class="footer__copyright">Luca Thomesse - Tous droits réservés</div>
     </div>
