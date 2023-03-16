@@ -1,15 +1,8 @@
 <template>
-
   <div class="ComView">
 
-    <HeroSectionComponent v-if="entete !== []"
-                          :gradient-title="entete.title.gradient"
-                          :white-title="entete.title.white"
-                          :image="entete.image.url"
-                          :description="entete.description"
-                          :is-banner-active="true"
-                          :items="entete.banner"
-    />
+    <HeroSectionComponent v-if="entete !== []" :gradient-title="entete.title.gradient" :white-title="entete.title.white"
+      :image="entete.image.url" :description="entete.description" :is-banner-active="true" :items="entete.banner" />
 
     <h2 class="portfolioTextGradient">Les débuts...</h2>
     <p class="text">J’ai commencé la communication lors de mes études en BUT Métiers du Multimédia et de l’Internet en
@@ -29,8 +22,8 @@
       de concurrence etc. Un dossier est quelque chose de très complet qui permet de justifier de la pertinence du
       projet et de la faisabilité de sa réalisation. </p>
     <div class="image">
-      <img class="item" src="public/images/BOTH.jpg">
-      <img class="item" src="public/images/FRONT.jpg">
+      <img class="item" src="../assets/BOTH.jpg">
+      <img class="item" src="../assets/FRONT.jpg">
     </div>
     <p class="text">Ce projet a été une réelle expérience pour moi par le domaine qu'il aborde. Le projet de 3ème
       semestre portait sur les NFT, un domaine que je ne connaissais pas. De ce fait, il a fallu beaucoup se renseigner
@@ -42,9 +35,9 @@
       la création de cartes postales et passant par la création de logos, la formation MMI regorge de projet de création
       print et web.</p>
     <div class="image">
-      <img class="item" src="public/images/DESIGN4.png">
-      <img class="item" src="public/images/Cassandre.png">
-      <img class="item" src="public/images/Maquette.png">
+      <img class="item" src="../assets/DESIGN4.png">
+      <img class="item" src="../assets/Cassandre.png">
+      <img class="item" src="../assets/Maquette.png">
     </div>
 
     <h2 class="portfolioTextGradient">Alternance - Assistant marketing</h2>
@@ -53,18 +46,19 @@
       sont de réaliser des visuels de communication web et print ainsi que le montage de vidéos produits, la photo à plat
       de produits et un peu de manutention.
       <br> De ce fait, j'ai eu notamment l'opportunité de réaliser des cartes
-      postales ou encore une Newsletter.</p>
+      postales ou encore une Newsletter.
+    </p>
 
     <div class="image">
-      <img class="item" src="public/images/FicheProduit.png">
-      <img class="item" src="public/images/FRONT.png">
-      <img class="item" src="public/images/BACK.png">
+      <img class="item" src="../assets/FicheProduit.png">
+      <img class="item" src="../assets/FRONT.png">
+      <img class="item" src="../assets/BACK.png">
     </div>
 
     <div class="image">
-      <img class="items" src="public/images/N-Part1.png">
-      <img class="items" src="public/images/N-Part2.png">
-      <img class="item" src="public/images/Signature%20Email%20EquipHotel%20300dpi.jpg">
+      <img class="items" src="../assets/N-Part1.png">
+      <img class="items" src="../assets/N-Part2.png">
+      <img class="item" src="../assets/Signature.jpg">
     </div>
 
 
@@ -126,6 +120,5 @@ export default {
 h3 {
   margin-top: $-sp-s;
 }
-
 </style>
 

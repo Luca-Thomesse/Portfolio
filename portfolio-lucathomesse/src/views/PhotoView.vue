@@ -1,15 +1,7 @@
 <template>
-
-
   <div class="PhotoView">
-    <HeroSectionComponent v-if="entete !== []"
-                          :gradient-title="entete.title.gradient"
-                          :white-title="entete.title.white"
-                          :image="entete.image.url"
-                          :description="entete.description"
-                          :is-banner-active="true"
-                          :items="entete.banner"
-    />
+    <HeroSectionComponent v-if="entete !== []" :gradient-title="entete.title.gradient" :white-title="entete.title.white"
+      :image="entete.image.url" :description="entete.description" :is-banner-active="true" :items="entete.banner" />
 
     <h2 class="portfolioTextGradient">Les débuts...</h2>
     <p class="text">J’ai toujours été passionné par les métiers de l’image et la photographie depuis que je suis petit.
@@ -25,9 +17,9 @@
       nombreuses personnes : un mariage. Cette expérience fût très stressante et professionnalisante pour moi compte
       tenu de l’importance de prendre des clichés réussis.</p>
     <div class="image">
-      <img class="item" src="public/images/PSX_20210730_113828.jpg">
-      <img class="item" src="public/images/PSX_20210730_120246.jpg">
-      <img class="item" src="public/images/PSX_20210801_160428.jpg">
+      <img class="item" src="../assets/PSX_20210730_113828.jpg">
+      <img class="item" src="../assets/PSX_20210730_120246.jpg">
+      <img class="item" src="../assets/24052022-IMG_2746.jpg">
     </div>
 
     <h3>Concerts</h3>
@@ -35,9 +27,9 @@
       la cour d’une auberge restaurant en Alsace où un duo de jeunes musiciens se produisait. Puis le second étant un
       festival de Jazz dans la cour du château des Capucins dans les Vosges.</p>
     <div class="image">
-      <img class="item" src="public/images/PSX_20210805_222210.jpg">
-      <img class="item" src="public/images/20210730192304_IMG_8595.JPG">
-      <img class="item" src="public/images/20210619192211_IMG_6538.JPG">
+      <img class="item" src="../assets/PSX_20210805_222210.jpg">
+      <img class="item" src="../assets/20210730192304_IMG_8595.JPG">
+      <img class="item" src="../assets/20210619192211_IMG_6538.JPG">
     </div>
 
     <h3>Événements étudiants</h3>
@@ -46,9 +38,9 @@
       sportives ou encore soirée étudiantes, j’ai pu découvrir et approfondir mes compétences en photographie
       événementielle.</p>
     <div class="image">
-      <img class="item" src="public/images/24052022-IMG_2695.jpg">
-      <img class="item" src="public/images/06102022-IMG_3901.jpg">
-      <img class="item" src="public/images/24052022-IMG_2435.jpg">
+      <img class="item" src="../assets/24052022-IMG_2695.jpg">
+      <img class="item" src="../assets/06102022-IMG_3901.jpg">
+      <img class="item" src="../assets/24052022-IMG_2435.jpg">
     </div>
 
     <h2 class="portfolioTextGradient">Animalier</h2>
@@ -56,9 +48,9 @@
     <p class="text">Je me suis essayé à la photographie animalière et j’ai pu capturer des instants uniques de la
       faune.</p>
     <div class="image">
-      <img class="item" src="public/images/20201028111605_IMG_9837.JPG">
-      <img class="item" src="public/images/PSX_20200702_112350.jpg">
-      <img class="item" src="public/images/PSX_20201028_133845.jpg">
+      <img class="item" src="../assets/20201028111605_IMG_9837.JPG">
+      <img class="item" src="../assets/PSX_20200702_112350.jpg">
+      <img class="item" src="../assets/PSX_20201028_133845.jpg">
     </div>
 
     <h2 class="portfolioTextGradient">Dystopian Forest</h2>
@@ -67,9 +59,9 @@
       qui met en
       avant la beauté des forêts vosgiennes entre brûme et épineux.</p>
     <div class="image">
-      <img class="item" src="public/images/PSX_20200613_193852.jpg">
-      <img class="item" src="public/images/IMG_20200601_103536_806.jpg">
-      <img class="item" src="public/images/PSX_20200710_091755.jpg">
+      <img class="item" src="../assets/PSX_20200613_193852.jpg">
+      <img class="item" src="../assets/IMG_20200601_103536_806.jpg">
+      <img class="item" src="../assets/PSX_20200710_091755.jpg">
     </div>
 
     <h2 class="portfolioTextGradient">Architecture</h2>
@@ -79,9 +71,9 @@
       réalisé des clichés d’architectures uniques qui montrent la technicité et la grandeur des bâtiments de nos
       villes.</p>
     <div class="image">
-      <img class="item" src="public/images/1618656254133.jpg">
-      <img class="item" src="public/images/PSX_20201027_124955.jpg">
-      <img class="item" src="public/images/PSX_20210417_110522.jpg">
+      <img class="item" src="../assets/1618656254133.jpg">
+      <img class="item" src="../assets/PSX_20201027_124955.jpg">
+      <img class="item" src="../assets/PSX_20210417_110522.jpg">
     </div>
 
     <h2 class="portfolioTextGradient">Travail et recherches artistiques</h2>
@@ -90,21 +82,20 @@
       réalisé quelques projets photographiques artistiques. Entre travailler le flou, la macro photographie ou le contre
       jour, la photographie regorge de techniques pour exprimer son trait artistique.</p>
     <div class="image">
-      <img class="item" src="public/images/PSX_20200801_080646.jpg">
-      <img class="item" src="public/images/PSX_20210328_160204.jpg">
-      <img class="item" src="public/images/PSX_20210314_115448.jpg">
+      <img class="item" src="../assets/PSX_20200801_080646.jpg">
+      <img class="item" src="../assets/PSX_20210328_160204.jpg">
+      <img class="item" src="../assets/PSX_20210314_115448.jpg">
     </div>
     <div class="image">
-      <img class="item" src="public/images/PSX_20201202_143710.jpg">
-      <img class="item" src="public/images/PSX_20210216_121210.jpg">
-      <img class="item" src="public/images/PSX_20210606_223341.jpg">
+      <img class="item" src="../assets/PSX_20201202_143710.jpg">
+      <img class="item" src="../assets/PSX_20210216_121210.jpg">
+      <img class="item" src="../assets/PSX_20210606_223341.jpg">
     </div>
 
     <h2 class="title">Et bien d'autres clichés à découvrir sur mes réseaux.</h2>
 
 
   </div>
-
 </template>
 
 <script>
@@ -157,5 +148,4 @@ export default {
 .title {
   text-align: center;
 }
-
 </style>
