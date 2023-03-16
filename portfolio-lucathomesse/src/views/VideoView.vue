@@ -37,17 +37,17 @@ export default {
     <h2 class="portfolioTextGradient">Les débuts...</h2>
     <p class="text">J’ai commencé à m’intéresser au monde de la vidéo assez jeune en faisant des vidéos sur YouTube avec
       des amis. Puis, au lycée, grâce à mon professeur d’allemand et des camarades, j’ai pu découvrir les courts
-      métrage. Depuis, j’ai réalisé un court métrage, participé à une fiction et tourner de nombreuses petites vidéos
+      métrages. Depuis, j’ai réalisé un court métrage, participé à une fiction et tourner de nombreuses petites vidéos
       comme un clip de musique.</p>
 
     <h2 class="portfolioTextGradient">Court métrage</h2>
     <p class="text">Fin 2019, après une discussion avec mon professeur d’allemand et un ami, le projet de réalisé un
       court métrage engagé sur le réchauffement climatique est né. Le projet était, en partenariat avec la société des
       membres de la légion d’honneur (SMLH) et en relation avec Sébastien Drak, pilote d’hélicoptère sur le Polarsterne
-      (brise-glace), de réalisé un court humoristique et informatif sur le réchauffement climatique.</p>
+      (brise-glace), de réalisé un court métrage humoristique et informatif sur le réchauffement climatique.</p>
     <p class="text">Février 2020, le script est enfin terminé et le tournage peut débuter. Pendant 3 jours, avec une
-      équipe de 3 à 6 personnes en fonction des scènes, nous allons faire toute les captation audio et vidéo pour
-      réalisé le court métrage. Mon rôle dans ce projet a été d’organiser le tournage, co-scènariser, co-tourner et
+      équipe de 3 à 6 personnes en fonction des scènes, nous allons faire toutes les captations audio et vidéo pour
+      réaliser le court métrage. Mon rôle dans ce projet a été d’organiser le tournage, co-scènariser, co-tourner et
       jouer un des rôles.</p>
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/T9nSGlF1uqs" title="YouTube video player"
@@ -80,7 +80,7 @@ export default {
 
     <h2 class="portfolioTextGradient">Micro-trottoir</h2>
     <p class="text">En première année de BUT MMI, j'ai pu avoir l'occassion de réaliser lors d'un exercice de cours, un
-      tournage de micro-trottoir. Ce projet m'a permis de découvrir les spécificité de ce type de vidéo et d'aquérir des
+      tournage de micro-trottoir. Ce projet m'a permis de découvrir les spécificités de ce type de vidéo et d'aquérir des
       compétences techniques. C'était aussi la première fois que je faisais du montage ainsi que du voice over. De ce
       fait, ce micro-trottoir m'a beaucoup apporté.</p>
 

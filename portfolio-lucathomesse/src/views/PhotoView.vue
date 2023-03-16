@@ -15,7 +15,8 @@
     <p class="text">J’ai toujours été passionné par les métiers de l’image et la photographie depuis que je suis petit.
       J’ai commencé par faire des photos avec mon téléphone comme tout le monde. Puis, début 2020, j’ai acheté mon
       premier appareil photo et depuis je ne me suis jamais arrêté. Entre évenements, architecture, animalier ou encore
-      astrophoto, j’ai pu découvrir un grand nombre de personnes, animaux et paysages grâce à la photographie.</p>
+      astrophoto, j’ai pu découvrir un grand nombre de personnes et la beauté de notre monde grâce à la
+      photographie.</p>
 
     <h2 class="portfolioTextGradient">Événements</h2>
 
@@ -52,7 +53,8 @@
 
     <h2 class="portfolioTextGradient">Animalier</h2>
 
-    <p>Je me suis essayé à la photographie animalière et j’ai pu capturé des instants unique de la faune.</p>
+    <p class="text">Je me suis essayé à la photographie animalière et j’ai pu capturer des instants uniques de la
+      faune.</p>
     <div class="image">
       <img class="item" src="public/images/20201028111605_IMG_9837.JPG">
       <img class="item" src="public/images/PSX_20200702_112350.jpg">
@@ -61,7 +63,8 @@
 
     <h2 class="portfolioTextGradient">Dystopian Forest</h2>
 
-    <p>Voici un exemple de série photographique que je réalise. Ici, je vous présente "Dystopian Forest" qui met en
+    <p class="text">Voici un exemple de série photographique que je réalise. Ici, je vous présente "Dystopian Forest"
+      qui met en
       avant la beauté des forêts vosgiennes entre brûme et épineux.</p>
     <div class="image">
       <img class="item" src="public/images/PSX_20200613_193852.jpg">
@@ -71,8 +74,9 @@
 
     <h2 class="portfolioTextGradient">Architecture</h2>
 
-    <p>J’ai parcouru différents espaces urbain à la recherche de forme, de lignes et de structures intéressantes. J’ai
-      réalisé des clichés d’architecture uniques qui montrent la technicité et la grandeur des bâtiments de nos
+    <p class="text">J’ai parcouru différents espaces urbain à la recherche de formes, de lignes et de structures
+      intéressantes. J’ai
+      réalisé des clichés d’architectures uniques qui montrent la technicité et la grandeur des bâtiments de nos
       villes.</p>
     <div class="image">
       <img class="item" src="public/images/1618656254133.jpg">
@@ -82,8 +86,9 @@
 
     <h2 class="portfolioTextGradient">Travail et recherches artistiques</h2>
 
-    <p>Ayant été en spécialité art plastique au lycée et intéressé par l’art depuis tout petit, j’ai réalisé quelques
-      projets photographiques artistiques.</p>
+    <p class="text">Ayant été en spécialité art plastique au lycée et intéressé par l’art depuis tout petit, j’ai
+      réalisé quelques projets photographiques artistiques. Entre travailler le flou, la macro photographie ou le contre
+      jour, la photographie regorge de techniques pour exprimer son trait artistique.</p>
     <div class="image">
       <img class="item" src="public/images/PSX_20200801_080646.jpg">
       <img class="item" src="public/images/PSX_20210328_160204.jpg">

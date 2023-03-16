@@ -58,7 +58,15 @@ export default {
                           :items="entete.banner"
                           :is-banner-active="true"
     />
-    <PortfolioParagraphe/>
+
+    <h2 class="portfolioTextGradient">Qui suis je ?</h2>
+    <p class="text">Je suis Luca Thomesse, jeune homme de 19 ans passionné par les métiers du multimédia depuis petit.
+      J’ai débuté par faire des photos lors de projets artistiques pour mes cours d’art. Puis, avec des amis, j’ai
+      commencé à réaliser des courts métrages quand j’étais au lycée. S’en est suivi la captation photo et vidéo
+      d’événements tel qu’un mariage ou encore des événements étudiants. Étant en 2ème année de BUT Métiers du
+      Multimédia et de l’Internet, j’ai pu en apprendre davantage sur les métiers du multimédia et parfaire mes
+      connaissances lors de projets. Je suis également en alternance depuis septembre 2022 et je découvre en quoi mes
+      réalisations sont utiles dans le monde du travail.</p>
 
     <h2 class="portfolioTextGradient">Mes travaux</h2>
     <template v-for="bigCard in bigcards" :key="bigCard.id">
