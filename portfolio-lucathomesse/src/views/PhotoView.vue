@@ -19,7 +19,7 @@
     <div class="image">
       <img class="item" src="../assets/PSX_20210730_113828.jpg">
       <img class="item" src="../assets/PSX_20210730_120246.jpg">
-      <img class="item" src="../assets/24052022-IMG_2746.jpg">
+      <img class="item" src="../assets/PSX_20210801_160428.jpg">
     </div>
 
     <h3>Concerts</h3>
